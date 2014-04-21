@@ -13,6 +13,7 @@ RUN wget -q -O - --no-cookies --no-check-certificate --header "Cookie: gpw_e24=h
 
 RUN mkdir -p /usr/lib/jvm
 RUN tar zxf /tmp/jre.tar.gz -C /usr/lib/jvm
+RUN rm /tmp/jre.tar.gz
 
 RUN update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/jdk1.7.0_55/bin/java" 1
 RUN update-alternatives --set java /usr/lib/jvm/jdk1.7.0_55/bin/java
