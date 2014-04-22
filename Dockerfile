@@ -27,4 +27,4 @@ RUN wget -q -O - --no-cookies --no-check-certificate http://debian.datastax.com/
 RUN TERM=xterm apt-get update
 RUN TERM=xterm apt-get -y install dsc20
 
-EXPOSE 9160 7000
+EXPOSE  7000 7199 9160
